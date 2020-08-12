@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;
+    --header-bar: #4267b2;
+    --header-bar-font: #F5F7F8;
+    
+}
+input,
+button{
+    outline: 0;
+}
+body{
+    background-color: #e9ebee;
+}
+
+/**** SECTION HEADER --------**/
+
+header.fb-header {
+    display: flex;
+    background:var(--header-bar);
+    height: 42px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #344879;
+}
+
+header.fb-header  div.search{
+    display: flex ;
+    align-items: center;
+    padding-left:  8vw;
+}
+header.fb-header  div.search span.fb-icon {
+    background-image: url('/facebook/images/icons.png');
+    background-repeat: no-repeat ;
+    background-position: 0 0;
+    display: block;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+header.fb-header  div.search .search-input{
+    flex: 1;
+    flex-shrink: 0;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid  #52555c;
+    width: 40rem;
+    height: 24px;
+    padding: 0 16px ;
+    font-size: 1.4rem;
+    background: url('/facebook/images/icons-sheet-2.png') no-repeat center;
+    background-position: 0 -972px;
+    background-color: #f5f6f7;
+    background-position-x: 99.8%;
+    z-index: 2;
+}
+
+
+header.fb-header  div.search .search-input{
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 1px solid  #52555c;
+    width: 30vw;
+    height: 24px;
+    padding-left: 10px ;
+    font-size: 1.4rem;
+}
+
+
+
+header.fb-header  div.actions{
+    display: flex;
+}
+
+header.fb-header  div.actions img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+
+header.fb-header  div.actions a{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'inherit','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--header-bar-font);    
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+header.fb-header  div.actions a img.profile{
+    margin-right: 8px;
+}
+header.fb-header  div.actions a{
+    
+    border-right: 1px solid #4560a0 ;
+    padding: 0 5px;
+}
+
+header.fb-header  div.actions a + a{    
+    margin-left: 2px;
+}
+
+header.fb-header  div.actions a:hover{
+
+    background: #3b5da0;
+    border-radius: 2px;
+}
+
+
+header.fb-header  div.actions span.icon{
+    background-image: url('/facebook/images/icons-sheet-2.png');
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    display: block;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+    opacity: .5;
+}
+
+
+header.fb-header  div.actions .invites{
+    background-position: 0 -688px;
+}
+
+header.fb-header  div.actions .chat{
+    background-position: 0 -738px;
+}
+
+header.fb-header  div.actions .notifications{
+    background-position: 0 -613px;
+}
+
+header.fb-header  div.actions .faq{
+    background-position: 0 -788px;
+}
+
+
+header.fb-header  div.actions .icon.options{
+    background-image: url('/facebook/images/icons.png');
+    background-position: 0 -50px;
+    padding-right: 11vw ;
+;
+}
