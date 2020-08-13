@@ -17,6 +17,7 @@ button{
 }
 body{
     background-color: #e9ebee;
+    -webkit-font-smoothing: antialiased;
 }
 
 /**** SECTION HEADER --------**/
@@ -150,5 +151,255 @@ header.fb-header  div.actions .icon.options{
     background-image: url('/facebook/images/icons.png');
     background-position: 0 -50px;
     padding-right: 11vw ;
+    
 ;
+}
+/***** SECTION CONTENT ******/
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    max-width: 1000px;
+}
+
+
+
+/**** SECTION SIDEBAR OPTIONS --------**/
+
+section.sidebar-options{
+    margin: 10px 0 0px 8vw;
+    width: 180px;
+}
+
+.profile.option-link{
+    margin: 0 10px 0 0;
+}
+
+.option-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 1px 1px;
+}
+
+.option-link:hover{
+    
+    background-color: #F3F4F4;
+    outline: 1px solid #dfe0e0 ;
+    border-radius: 2px;
+}
+
+section.sidebar-options div.profile-info a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+section.sidebar-options div.profile-info .profile-data > span{
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1d2129;
+    opacity: 1;
+}
+section.sidebar-options div.profile-info div{
+    display: flex;
+    align-items: center;
+}
+
+a.profile span.icon{
+    display:flex;
+    width: 35px;
+    height: 24px;
+    background-image: url('/facebook/images/icons-sheet-3.png');
+    background-position: 0 -1508px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    opacity: 0;
+}
+
+a.profile:hover > span.icon{
+    opacity: 1;
+}
+
+/*** MAIN OPTIONS ***/
+
+section.sidebar-options div.main-options {
+    margin: 10px 0 15px 0;
+}
+section.sidebar-options div.main-options ul{
+    list-style: none;
+}
+
+section.sidebar-options div.main-options ul  li div.option{
+    
+}
+
+.icon-sheet-3.feed {
+    width: 35px;
+    height: 20px;
+    background-image: url('/facebook/images/icons-sheet-3.png');
+    background-position: 0 -753px;
+    background-repeat: no-repeat;
+}
+
+.icon-sheet-3.messeger {
+    width: 35px;
+    height: 20px;
+    background-image: url('/facebook/images/icons-sheet-3.png');
+    background-position: 0 -207px;
+    background-repeat: no-repeat;
+}
+
+.icon-sheet-3.watch {
+    width: 35px;
+    height: 20px;
+    background-image: url('/facebook/images/icons-sheet-3.png');
+    background-position: 0 -1173px;
+    background-repeat: no-repeat;
+}
+
+.icon-sheet-3.marketplace {
+    width: 23px;
+    height: 23px;
+    background-image: url('/facebook/images/icons-sheet-4.png');
+    background-position: -444px -49px;
+    background-repeat: no-repeat;
+    margin-right: 11px;
+}
+
+section.sidebar-options div.main-options ul   li  div.option  a  {
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ padding: 5px 0 ;
+}
+section.sidebar-options div.main-options ul   li  div.option  a  strong{
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1d2129;
+    font-weight: normal;
+}
+section.sidebar-options div.main-options ul   li  div.option  a  strong.active{
+    font-weight: bold;
+}
+
+
+
+/*** MAIN FEED ***/
+
+section.feed {
+    flex:1;
+    height:100%;
+    
+    margin: 0 10px;
+
+}
+
+section.feed div.new-post-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+section.feed div.new-post-container div.titulo-postagem{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border: 1px solid #d8dde7;
+    background-color: #F3F4F4;
+    border-radius: 4px 4px 0 0 ;
+}
+
+section.feed div.new-post-container div.titulo-postagem strong{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4b4f56;
+    margin: 0 0 0 5px;
+}
+
+
+section.feed div.new-post-container div.area-postagem {
+    /*border:  solid #d8dde7;*/
+    border-right: 1px solid #d8dde7;
+    border-left: 1px solid #d8dde7;
+    background-color: #ffffff;
+}
+
+section.feed div.new-post-container div.area-postagem div{
+    margin: 15px;
+    display: flex;
+    align-items: flex-start;
+    max-height: 150px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #d8dde7;
+}
+
+section.feed div.new-post-container div.area-postagem div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #d8dde7;
+}
+
+section.feed div.new-post-container div.area-postagem div textarea{
+    border: none ;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    resize:none;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    outline: none;
+    opacity: 0.9;
+}
+
+
+section.feed div.new-post-container div.botoes-postagem{
+    background-color: #ffffff;
+    border-left: 1px solid #d8dde7;
+    border-right: 1px solid #d8dde7;
+    border-bottom: 1px solid #d8dde7;
+    height: 50px;
+    border-radius: 0 0 4px 4px; 
+}
+
+
+section.feed div.new-post-container div.botoes-postagem ul {
+    list-style: none;
+    display: flex;
+    margin-left: 10px;
+}
+
+section.feed div.new-post-container div.botoes-postagem ul li {
+    background-color: #f5f6f7;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+section.feed div.new-post-container div.botoes-postagem ul li div  {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 1;
+}
+section.feed div.new-post-container div.botoes-postagem ul li div strong {
+    font-weight: bold;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #4b4f56;
+    margin-left: 5px;
+}
+
+section.feed div.new-post-container div.botoes-postagem ul li + li {
+    margin-left: 10px;
+}
+
+
+/** SECTOPM
+section.advertising {
+    display: flex;
+    width: 10vw;
 }
