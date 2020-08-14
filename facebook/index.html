@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Clone Facebook Layout</title>
 </head>
 
 <body>
     <header class="fb-header">
-        <div class="search">
-            <span class="fb-icon"></span>
-            <input class="search-input" type="text" placeholder="Pesquisar">
-        </div>
-        <div class="actions">
+        <div class="container">
+            <div class="search">
+                <span class="fb-icon"></span>
+                <input class="search-input" type="text" placeholder="Pesquisar">
+            </div>
+            <div class="actions">
 
-            <a href="" class=""><img src="/facebook/images/profile.jpg" class="profile">Diego Raian</a></li>
-            <a href="" class="">Página Inicial</a>
-            <a href="" class="">Criar</a>
+                <a href="" class=""><img src="/facebook/images/profile.jpg" class="profile">Diego Raian</a></li>
+                <a href="" class="">Página Inicial</a>
+                <a href="" class="">Criar</a>
 
-            <span class="icon invites"></span>
-            <span class="icon chat"></span>
-            <span class="icon notifications"></span>
-            <span class="icon faq"></span>
-            <span class="icon options"></span>
+                <span class="icon invites"></span>
+                <span class="icon chat"></span>
+                <span class="icon notifications"></span>
+                <span class="icon faq"></span>
+                <span class="icon options"></span>
+            </div>
         </div>
     </header>
     <div class="content">
@@ -80,52 +82,130 @@
 
         <section class="feed">
             <div class="new-post-container">
-                    <div class="titulo-postagem">
-                        <strong>Criar Publicação</strong>
-                    </div>
-                    <div class="area-postagem">
-                        
-                        <div>
-                            <img src="/facebook/images/profile.jpg" alt="">
-                            <textarea placeholder="No que você está pensando, Diego?" cols="30" rows="3" ></textarea>
-                        </div>
-                        
-                    </div>
-                    <div class="botoes-postagem">
-                        <ul>
-                            <li>
-                                <div>
-                                    <img src="/facebook/images/app-rooms_20.png" alt="">
-                                    <strong>Criar Sala</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <img src="/facebook/images/fotos.png" alt="">
-                                    <strong>Foto/vídeo</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <img src="/facebook/images/amigos.png" alt="">
-                                    <strong>Marcar Amigos</strong>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-            <h1>FEED</h1>
-            <ul>
-                <li><div>
+                <div class="titulo-postagem">
+                    <strong>Criar Publicação</strong>
+                </div>
+                <div class="area-postagem">
 
-                </div></li>
-                <li>POST</li>
-                <li>POST</li>
-                <li>POST</li>
+                    <div>
+                        <img src="/facebook/images/profile.jpg" alt="">
+                        <textarea placeholder="No que você está pensando, Diego?" cols="30" rows="3"></textarea>
+                    </div>
+
+                </div>
+                <div class="botoes-postagem">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="/facebook/images/app-rooms_20.png" alt="">
+                                <strong>Criar Sala</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="/facebook/images/fotos.png" alt="">
+                                <strong>Foto/vídeo</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="/facebook/images/amigos.png" alt="">
+                                <strong>Marcar Amigos</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <ul class="lista-posts">
+                <li class="white-box-container">
+                    <div class="post">
+                        <div class="profile-info">
+                            <img src="/facebook/images/profile.jpg" alt="">
+                            <div>
+                                <strong>Diego Raian</strong>
+                                <div class="minnor-info">
+                                    <span>5h ·</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="post-description">
+                            <span>Ei irmão!</span>
+                        </div>
+                        <div class="post-actions">
+                            <ul>
+                                <li> <span class="icon-sheet-5 like"></span>Curtir</li>
+                                <li> <span class="icon-sheet-5 comentar"></span>Comentar</li>
+                                <li> <span class="icon-sheet-5 compartilhar"></span>Compartilhar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="white-box-container">
+                    <div class="post">
+                        <div class="profile-info">
+                            <img src="/facebook/images/profile.jpg" alt="">
+                            <div>
+                                <strong>Diego Raian</strong>
+                                <div class="minnor-info">
+                                    <span>5h ·</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="post-description">
+                            <span>Curtiu?</span>
+                        </div>
+                        <div class="post-actions">
+                            <ul>
+                                <li> <span class="icon-sheet-5 like"></span>Curtir</li>
+                                <li> <span class="icon-sheet-5 comentar"></span>Comentar</li>
+                                <li> <span class="icon-sheet-5 compartilhar"></span>Compartilhar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="white-box-container">
+                    <div class="post">
+                        <div class="profile-info">
+                            <img src="/facebook/images/profile.jpg" alt="">
+                            <div>
+                                <strong>Diego Raian</strong>
+                                <div class="minnor-info">
+                                    <span>5h ·</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="post-description">
+                            <span>Da like!</span>
+                        </div>
+                        <div class="post-actions">
+                            <ul>
+                                <li> <span class="icon-sheet-5 like"></span>Curtir</li>
+                                <li> <span class="icon-sheet-5 comentar"></span>Comentar</li>
+                                <li> <span class="icon-sheet-5 compartilhar"></span>Compartilhar</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
             </ul>
         </section>
         <section class="advertising">
-            <h1>advertising</h1>
+            <div class="white-box-container">
+                <a href="">
+                <span class="main-birthday">Lucas Ribeiro </span> 
+                <span class="conjunction">e</span>
+                <span class="other-people">outras 2 pessoas</span>
+                </a>
+            </div>
+
         </section>
     </div>
 </body>
